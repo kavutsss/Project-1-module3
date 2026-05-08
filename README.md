@@ -1,2 +1,74 @@
 # Project-1-module3
-A creative agency has hired you to develop a modern, responsive, and easily maintainable web presence to showcase their work. They need an online platform that displays their past projects and allows them to dynamically update their portfolio as new work is completed.
+
+## Project Manager
+
+A simple portfolio app built to ensure project's of the company are managed efficiently.
+
+## Features
+
+-Add project's
+-Search through projects
+-Delete projects
+-Responsive design
+-Modern UI
+
+## Tech Stack
+
+-JavaScript
+-React
+-tailwindcss
+-Vite
+-Jest
+
+## Installation
+
+Clone repo
+```
+git clone https://github.com/kavuts/Project-1-module3.git
+
+```
+
+Install dependencies
+```
+npm install
+```
+# Firebase setup
+
+# -Go to firebase Console
+# -Create a new project
+# -Enable Firestore
+# -Copy config to src/firebase.js
+
+## Run the app
+```
+npm run dev
+```
+## Usage
+
+-Add your projects
+-Search through projects
+-Delete projects
+
+## Testing
+
+```
+npm run test
+```
+## Deployment
+
+-Deploy to Firebase and Github Actions
+Deployed at: https://project-1-module3.web.app
+
+## Disadvantages
+-No authentication
+-No due dates on projects
+-No project management
+
+## Improvements
+-Add authentication
+-Add due dates on projects
+-Add project management
+
+## License
+MIT License
+
