@@ -8,10 +8,11 @@ function AddProjectForm({ onAddProject }) {
   });
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
+    const { name, value } = e.target || {};
+    if (!name) return;
     setFormData(prev => ({
       ...prev,
-      [name]: value
+      [name]: value || ''
     }));
   };
 
@@ -43,7 +44,7 @@ function AddProjectForm({ onAddProject }) {
           name="title"
           value={formData.title}
           onChange={handleChange}
-          placeholder="Enter project title"
+          placeholder="e.g., E-commerce Website, Mobile App, Portfolio..."
           required
           className="w-full px-4 py-3 border border-gray-300 rounded-lg text-base transition-colors focus:outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500 font-sans"
         />
@@ -56,7 +57,7 @@ function AddProjectForm({ onAddProject }) {
           name="category"
           value={formData.category}
           onChange={handleChange}
-          placeholder="Enter category (e.g., Web, Mobile, AI)"
+          placeholder="e.g., Web, Mobile, AI, Design..."
           className="w-full px-4 py-3 border border-gray-300 rounded-lg text-base transition-colors focus:outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500 font-sans"
         />
       </div>
@@ -67,7 +68,7 @@ function AddProjectForm({ onAddProject }) {
           name="description"
           value={formData.description}
           onChange={handleChange}
-          placeholder="Enter project description"
+          placeholder="Tell me a bit about this project... What's it for? What tech stack? Goals?"
           rows="4"
           className="w-full px-4 py-3 border border-gray-300 rounded-lg text-base transition-colors focus:outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500 font-sans resize-y min-h-[100px]"
         />
