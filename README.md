@@ -2,7 +2,7 @@
 
 ## Project Manager
 
-A simple portfolio app built to ensure project's of the company are managed efficiently.
+A simple portfolio app built to ensure the projects of the company are managed efficiently.
 
 ## Features
 
@@ -34,10 +34,10 @@ npm install
 ```
 # Firebase setup
 
-# -Go to firebase Console
-# -Create a new project
-# -Enable Firestore
-# -Copy config to src/firebase.js
+ -Go to Firebase Console
+ -Create a new project
+-Enable Firestore
+ -Copy config to src/firebase.js
 
 ## Run the app
 ```
@@ -56,7 +56,7 @@ npm run test
 ```
 ## Deployment
 
--Deploy to Firebase and Github Actions
+-Deploy to Firebase and GitHub Actions
 Deployed at: https://project-1-module3.web.app
 
 ## Disadvantages
